@@ -1,23 +1,92 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# Environment files (NEVER commit secrets)
+.env
+.env.local
+.env*.local
+.env.production
+.env.staging
+
+# Firebase credentials
+e-vent-aa93e-*.json
+google-services.json
+GoogleService-Info.plist
+
+# Binaries and archives
+*.exe
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Build artifacts
+*.apk
+*.ipa
+*.aab
+build/
+.gradle/
+
+# IDE
 .vscode/
-#Cache folder
-.alcache/
-#Symbols folder
-.alpackages/
-#Snapshots folder
-.snapshots/
-#Testing Output folder
-.output/
-#Extension App-file
-*.app
-#Rapid Application Development File
-rad.json
-#Translation Base-file
-*.g.xlf
-#License-files
-*.bclicense
-*.flf
-#Test results file
-TestResults.xml
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# TypeScript
+*.tsbuildinfo
+
+# Vercel
+.vercel
+
+# OS files
+Thumbs.db
+Desktop.ini
+
+# Temp files
+*.lnk
+*.tmp
+
+# Playwright
+.playwright-mcp/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# Upload directories (keep structure, ignore content)
+server/uploads/images/*
+!server/uploads/images/.gitkeep

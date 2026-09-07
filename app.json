@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "Event",
+    "slug": "e-vent",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/Favicon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/Favicon.png",
+          "color": "#4a55e1",
+          "sounds": ["./assets/sounds/notification.wav"],
+          "mode": "production"
+        }
+      ],
+      "expo-router"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app needs access to your location to automatically pin your service location on the map."
+      },
+      "bundleIdentifier": "com.ploxy1.Event"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/Favicon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "softwareKeyboardLayoutMode": "resize",
+      "package": "com.ploxy1.Event",
+      "googleServicesFile": "./google-services.json",
+      "useNextNotificationsApi": true,
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE"
+      ]
+    },
+    "scheme": "e-vent",
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/Favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2f700796-ad6c-4968-ba78-bf655e52d776"
+      }
+    },
+    "owner": "honey25"
+  }
+}
